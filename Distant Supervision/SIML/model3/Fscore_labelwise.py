@@ -20,7 +20,7 @@ def thresholdTuning(tr,pr):
 
  
 def ComputeFscore(modelfile,testfile,outputfile):
-    maxParagraphLength=200
+    maxParagraphLength=100
     maxParagraphs=1
     #nlabels=1001
     #vocabularySize=76391

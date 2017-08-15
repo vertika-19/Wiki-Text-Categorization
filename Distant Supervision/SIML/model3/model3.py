@@ -10,10 +10,10 @@ class Model3:
         self.wordEmbeddingDimension = 50    
         self.vocabularySize=vocabularySize
         self.labels=labels
-        self.filterSizes_paragraph = [2,3]    #[2,3]
+        self.filterSizes_paragraph = [1]    #[2,3]
         self.filterSizes_allPara=3
         self.paragraphLength=maxParagraphLength
-        self.num_filters_parargaph=64      #40
+        self.num_filters_parargaph=64     #40
 
         self.num_filters_allPara=30
         self.maxParagraph = maxParagraphs

@@ -1,2 +1,2 @@
-model_checkpoint_path: "model3_reuter_120"
-all_model_checkpoint_paths: "model3_reuter_120"
+model_checkpoint_path: "model3_reuter_100"
+all_model_checkpoint_paths: "model3_reuter_100"

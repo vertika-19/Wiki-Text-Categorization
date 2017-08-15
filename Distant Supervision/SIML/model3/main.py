@@ -4,7 +4,7 @@ from DataParser import DataParser as DataParser
 from model3 import Model3 as Model
 
 
-maxParagraphLength=200
+maxParagraphLength=100
 maxParagraphs= 1
 #nlabels=1001
 #vocabularySize=76391
@@ -16,10 +16,10 @@ training.getDataFromfile("C:/gitrepo/Wiki-Text-Categorization/Distant Supervisio
 
 model = Model(maxParagraphLength,maxParagraphs,nlabels,vocabularySize)
 
-batchSize=100
+batchSize=64
 
 epoch=0
-epochEnd=120
+epochEnd=105
 for e in range(epoch,epochEnd):
     print('Epoch: ' + str(e+1) )
     cost=0
@@ -27,6 +27,6 @@ for e in range(epoch,epochEnd):
         cost+=model.train(training.nextBatch(batchSize))
     print (str(cost/training.totalPages))
 
-    if (e+1)%10 == 0 and e > 50:
+    if (e+1)%10 == 0 and e > 60:
         print ('saving model..')
         model.save("models/model3_reuter_"+str(e+1))
