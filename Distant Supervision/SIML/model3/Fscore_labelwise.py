@@ -91,7 +91,7 @@ def ComputeFscore(modelfile,testfile,outputfile):
 
 if __name__ == '__main__':
     modelfile = "models/model3_reuter_100"
-    testfile = "C:/gitrepo/Wiki-Text-Categorization/Distant Supervision/Reuter_dataset/reuters_sparse_test.txt"
+    testfile = "C:/gitrepo/Wiki-Text-Categorization/Distant Supervision/Reuter_dataset/reuters_sparse_testcvmerged.txt"
     outputfile = "results/fscorelabelwise_14.txt"
 
     ComputeFscore(modelfile,testfile,outputfile)

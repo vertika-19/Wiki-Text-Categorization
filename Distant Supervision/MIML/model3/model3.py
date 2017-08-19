@@ -10,14 +10,14 @@ class Model3:
         self.wordEmbeddingDimension = 50    
         self.vocabularySize=vocabularySize
         self.labels=labels
-        self.filterSizes_paragraph = [2,3]    #[2,3]
+        self.filterSizes_paragraph = [1]    #[2,3]
         self.filterSizes_allPara=3
         self.paragraphLength=maxParagraphLength
         self.num_filters_parargaph=64      #40
 
         self.num_filters_allPara=30
         self.maxParagraph = maxParagraphs
-        self.poolLength= 10   #3
+        self.poolLength= 5   #10
         
         self.filterShapeOfAllPara =[self.filterSizes_allPara,3,1,self.num_filters_allPara]
         #self.fullyConnectedLayerInput = 375000
@@ -30,6 +30,8 @@ class Model3:
 #         self.fullyConnectedLayerInput = 375000
         self.fullyConnectedLayerInput = self.paragraphOutputSize
         self.wordEmbedding = tf.Variable(tf.random_uniform([self.vocabularySize, self.wordEmbeddingDimension], -1.0, 1.0),name="wordEmbedding")
+        self.learning_rate = 1e-3	#1e-4
+
 
         self.paragraphList = []
         for i in range(self.maxParagraph):
@@ -40,6 +42,11 @@ class Model3:
         self.device = "cpu"
         self.graph()
         self.session = tf.Session()
+        
+        # self.merged = tf.summary.merge_all()
+        # self.writer = tf.summary.FileWriter("logs/", self.session.graph)
+
+        # self.summary = self.session.run(tf.global_variables_initializer())
         self.session.run(tf.global_variables_initializer())
         
     
@@ -50,7 +57,7 @@ class Model3:
             self.prediction=self.fullyConnectedLayer(self.convOutput,self.labels)
             self.cross_entropy = -tf.reduce_sum(((self.target*tf.log(self.prediction + 1e-9)) + ((1-self.target) * tf.log(1 - self.prediction + 1e-9)) )  , name='xentropy' ) 
             self.cost = tf.reduce_mean(self.cross_entropy)
-            self.optimizer = tf.train.AdamOptimizer(learning_rate=1e-3).minimize(self.cost)
+            self.optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate).minimize(self.cost)
         
     
     def getParagraphEmbedding(self,paragraphWords):
@@ -70,6 +77,10 @@ class Model3:
 
             weights = tf.Variable(tf.truncated_normal(shape, stddev=0.1),name="paragraphConvLayerW_"+str(filter_size))
             bias= tf.Variable(tf.constant(0.1, shape=[num_filters]),name="paragraphConvLayerB_"+str(filter_size))
+            # tf.summary.histogram("paragraphConvLayerW_/weights", weights)
+            # tf.summary.histogram("paragraphConvLayerB_/biases", bias)
+
+
             conv = tf.nn.conv2d(
                         paragraphVector,
                         weights,
@@ -86,6 +97,7 @@ class Model3:
                         padding='SAME',
                         name="pool")
             pooled_outputs.append(pooled)
+            # tf.summary.histogram("Conv layer/pooled_outputs", pooled_outputs)
         return tf.concat(axis =1,values = pooled_outputs)
 
     
@@ -140,6 +152,8 @@ class Model3:
         for p in range(self.maxParagraph):
             feed_dict_input[self.paragraphList[p]]= data[1][p]
         _, cost = self.session.run((self.optimizer,self.cost),feed_dict=feed_dict_input)
+
+        # tf.summary.scalar('cost', cost)
         return cost
 
     def predict(self,data):

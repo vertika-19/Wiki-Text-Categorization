@@ -3,6 +3,7 @@ from model3 import Model3 as Model
 from sklearn.metrics import f1_score
 from sklearn.metrics import confusion_matrix
 import numpy as np
+import matplotlib as plt
 
 
 def thresholdTuning(tr,pr):
@@ -21,7 +22,7 @@ def thresholdTuning(tr,pr):
  
 def ComputeFscore(modelfile,testfile,outputfile):
     maxParagraphLength=20
-    maxParagraphs=10
+    maxParagraphs=20
     #nlabels=1001
     #vocabularySize=76391
     labels=8
@@ -49,14 +50,14 @@ def ComputeFscore(modelfile,testfile,outputfile):
     fScr={}
 
     thres=0.5
-    valid=int(len(truePre)*0.35)
+    valid=int(len(truePre)*0.5) #using first 50% data for threshold tuning - we have merged test and cv files
     labelsCount={}
     ConfusionMa={}
     fScr={}
     thresLab={}
     for la in range(labels):
         if la%25==0:
-            print("Currnet label",la)
+            print("Current label",la)
         t=[]
         p=[]
         for i in range(valid):
@@ -87,11 +88,42 @@ def ComputeFscore(modelfile,testfile,outputfile):
     print(sum_fscore)
     print(sum_fscore / float((labels - 1)))
     f.close()
+    return (sum_fscore / float((labels - 1)))
 
 
 if __name__ == '__main__':
-    modelfile = "/home/khushboo/Desktop/model3/models/model3_reuter_100"
-    testfile = "/home/khushboo/Desktop/Reuter_dataset/reuters_sparse_test.txt"
-    outputfile = "results/fscorelabelwise_14.txt"
-
+    testfile = "C:/gitrepo/Wiki-Text-Categorization/Distant Supervision/Reuter_dataset/reuters_sparse_testcvmerged.txt"
+    modelfile = "models/model3_reuter_100"
+    outputfile = "results/fscorelabelwise_100.txt"
     ComputeFscore(modelfile,testfile,outputfile)
+
+# if __name__ == '__main__':
+#     testfile = "C:/gitrepo/Wiki-Text-Categorization/Distant Supervision/Reuter_dataset/reuters_sparse_test.txt"
+    
+#     fscore_epochs =[]
+#     startepoch = 50
+#     endepoch = 100
+#     epochstep = 10
+#     for i in range(startepoch,endepoch,epochstep):
+#         print(i)
+#         modelfile = "models/model3_reuter_" + str(i)
+#         outputfile = "results/fscorelabelwise_" + str(i) + ".txt"
+#         print(modelfile)
+#         print(outputfile)
+#         val = ComputeFscore(modelfile,testfile,outputfile)
+#         fscore_epochs.append(val)
+#         print(val)
+
+#     print(fscore_epochs)
+#     epochslist = list(np.arange(startepoch,endepoch,epochstep))
+#     plt.plot(epochslist,fscore_epochs)
+
+#     plt.axis([startepoch,endepoch,0,1])
+#     plt.xticks(np.arange(startepoch,endepoch, epochstep))
+#     plt.yticks(np.arange(0.6,1, 0.05))
+
+#     plt.ylabel('fscore')
+#     plt.xlabel('epochs')
+#     plt.show()
+#     fig = plt.figure()
+#     fig.savefig('miml model3_reuter_fscores.png')

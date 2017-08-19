@@ -91,7 +91,7 @@ def ComputeFscore(modelfile,testfile,outputfile):
 
 if __name__ == '__main__':
     modelfile = "/home/khushboo/Desktop/model4/models/model4_reuter_100"
-    testfile = "/home/khushboo/Desktop/Reuter_dataset/reuters_sparse_test.txt"
+    testfile = "/home/khushboo/Desktop/Reuter_dataset/reuters_sparse_testcvmerged.txt"
     outputfile = "results/fscorelabelwise_8.txt"
 
     ComputeFscore(modelfile,testfile,outputfile)
