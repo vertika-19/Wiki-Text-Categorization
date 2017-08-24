@@ -11,16 +11,17 @@ class DataParser:
         self.paragraphLength = paragraphLength
         self.vocabSize=vocabSize
         self.counter = 0
+        self.totalPages = 1
 
     def getDataFromfile(self,fname):
 
         f=open(fname)
         self.data =[]
-        totalPages = int(f.readline())
+        self.totalPages = int(f.readline())
         count = 0
         pageId = f.readline()
         count = 0
-        while count < totalPages:
+        while count < self.totalPages:
             count = count + 1
             labelCount = int(f.readline())
             oneHotLabels = [0] * self.labels
@@ -47,15 +48,15 @@ class DataParser:
                         sectionFeatValue.append( int( float(x[1]) ) ) 
                 for i in range(secSize,self.paragraphLength):
                     sectionFeatId.append(0)
-                    sectionFeatValue.append(0)
+                    sectionFeatValue.append(1)
 
                 docFea.append( sectionFeatId[:self.paragraphLength] ) 
                 docValue.append( sectionFeatValue[:self.paragraphLength] ) 
 
 
             for i in range(sectionCount,self.maxParagraphs):
-                docFea.append( [0]) 
-                docValue.append( [0]) 
+                docFea.append( [0] * self.paragraphLength) 
+                docValue.append( [1] * self.paragraphLength) 
 
             self.data.append((oneHotLabels,docFea[:self.maxParagraphs],docValue[:self.maxParagraphs]))
         self.totalPages = len(self.data)
