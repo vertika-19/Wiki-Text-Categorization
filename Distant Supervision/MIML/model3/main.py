@@ -59,6 +59,8 @@ On train and cv merged but using original test data in some way
 batchSize=100	maxParagraphLength=10 maxParagraphs= 10	poolLength= 5 filters=64 filterSizes_paragraph = [1]	0.820137409822 
 
 
+0.812371047443
+
 '''
 
 

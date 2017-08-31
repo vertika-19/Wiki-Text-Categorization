@@ -14,12 +14,13 @@ wordEmbeddingDimension = int(sys.argv[5])
 batchSize= int(sys.argv[6])
 epochEnd = int(sys.argv[7])
 folder_name = sys.argv[8]
+lrate = float(sys.argv[9]) 
 nlabels = 8
 vocabularySize = 244
 
 training = DataParser(maxParagraphs,paragraphLength,nlabels,vocabularySize)
 training.getDataFromfile("../../Reuter_dataset/reuters_sparse_training.txt")
-model = Model(maxParagraphs,paragraphLength,nlabels,vocabularySize,filterSizes,num_filters,wordEmbeddingDimension)
+model = Model(maxParagraphs,paragraphLength,nlabels,vocabularySize,filterSizes,num_filters,wordEmbeddingDimension,lrate)
 
 costfile = open("results/costfile.txt","a")
 output = folder_name
@@ -45,7 +46,7 @@ for e in range(epoch,epochEnd):
         print ('Epoch: ' + str(e+1))
         print (str(cost/training.totalPages))
         costepochs.append(cost/training.totalPages)
-        output = output + " , " + str(cost/training.totalPages) 
+        output = output + "," + str(cost/training.totalPages) 
         print ('saving model..')
         model.save("models/" + folder_name + "/model7_reuter_"+str(e+1))
 

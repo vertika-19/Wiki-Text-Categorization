@@ -3,7 +3,7 @@ import numpy as np
 import math
 
 class Model7:
-    def __init__(self,maxParagraphs,paragraphLength,labels,vocabularySize,filterSizes,num_filters,wordEmbeddingDimension):
+    def __init__(self,maxParagraphs,paragraphLength,labels,vocabularySize,filterSizes,num_filters,wordEmbeddingDimension,lrate):
         self.wordEmbeddingDimension = wordEmbeddingDimension
         self.vocabularySize=vocabularySize
         self.labels=labels
@@ -12,7 +12,7 @@ class Model7:
         self.paragraphLength = paragraphLength
         self.maxParagraph = maxParagraphs
         self.fullyConnectedLayerInput = int(len(self.filterSizes)*self.num_filters*self.maxParagraph)
-        
+        self.learning_rate = lrate
         self.device ='cpu'
         self.wordEmbedding = tf.Variable(tf.random_uniform([self.vocabularySize, self.wordEmbeddingDimension], -1.0, 1.0),name="wordEmbedding")
 
@@ -35,7 +35,7 @@ class Model7:
             self.prediction = self.fullyConnectedLayer()
             self.cross_entropy = -tf.reduce_sum(((self.target*tf.log(self.prediction + 1e-9)) + ((1-self.target) * tf.log(1 - self.prediction + 1e-9)) )  , name='xentropy' ) 
             self.cost = tf.reduce_mean(self.cross_entropy)
-            self.optimizer = tf.train.AdamOptimizer(learning_rate=1e-4).minimize(self.cost)
+            self.optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate).minimize(self.cost)
         
     
     def getSectionEmbedding(self,feaIDs,feaValues):

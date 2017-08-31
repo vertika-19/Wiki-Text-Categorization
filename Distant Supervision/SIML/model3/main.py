@@ -16,15 +16,17 @@ training.getDataFromfile("C:/gitrepo/Wiki-Text-Categorization/Distant Supervisio
 
 model = Model(maxParagraphLength,maxParagraphs,nlabels,vocabularySize)
 
-batchSize=64
+batchSize=1
 
 epoch=0
 epochEnd=105
 for e in range(epoch,epochEnd):
     print('Epoch: ' + str(e+1) )
+    costlist = []
     cost=0
     for itr in range(int(training.totalPages/batchSize)):
         cost+=model.train(training.nextBatch(batchSize))
+    costlist.append(cost/training.totalPages)
     print (str(cost/training.totalPages))
 
     if (e+1)%10 == 0 and e > 60:
