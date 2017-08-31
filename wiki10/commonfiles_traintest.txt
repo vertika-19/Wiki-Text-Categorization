@@ -1,0 +1,6 @@
+CPU_socket
+ISO_216
+Albert_Einstein
+Information_Technology_Infrastructure_Library
+Language_Integrated_Query
+Novikov_self-consistency_principle
