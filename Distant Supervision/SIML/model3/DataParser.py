@@ -48,8 +48,6 @@ class DataParser:
 
                 #to get onlu uninque values among all para
                 instancesTemp = list(set(instancesTemp))
-                if count < 10:
-                    print(instancesTemp)
                 for i in range(len(instancesTemp),maxWordsInParagraph):
                     instancesTemp.append(0)  
 
@@ -74,8 +72,8 @@ class DataParser:
 
     def nextBatch(self,batchSize):
         self.counter %= self.totalPages
-        # if self.counter == 0:
-        #     random.shuffle(self.data)
+        if self.counter == 0:
+            random.shuffle(self.data)
         labelBatch=[]
         feaBatch=[]
         for itr in range(self.maxParagraph):

@@ -30,13 +30,11 @@ def ComputeFscore(modelfile,testfile,outputfile):
     # batchSize= int(sys.argv[6])
     # epochs= int(sys.argv[7])
     # folder_name = sys.argv[8]
-    # output = sys.argv[9]
-    lrate = sys.argv[10]
 
     labels = 8
     vocabularySize = 244
 
-    model = Model(maxParagraphs,maxParagraphLength,labels,vocabularySize,filterSizes,num_filters,wordEmbeddingDimension,lrate)
+    model = Model(maxParagraphs,maxParagraphLength,labels,vocabularySize,filterSizes,num_filters,wordEmbeddingDimension)
 
     testing = DataParser(maxParagraphs,maxParagraphLength,labels,vocabularySize)
     testing.getDataFromfile(testfile)
@@ -91,8 +89,8 @@ def ComputeFscore(modelfile,testfile,outputfile):
     sum_fscore = 0.0
     for i in range(labels):
         sum_fscore = sum_fscore + fScr[i]
-        output = output + "," + str(fScr[i])
-    output += "," + str(sum_fscore / float(labels - 1))
+        output = output + " , " + str(fScr[i])
+    output += " , " + str(sum_fscore / float(labels - 1))
     print("Fscore at " + sys.argv[7] + " epochs: " + str(sum_fscore / float(labels - 1)) )
     f.write(output + "\n")
     f.close()

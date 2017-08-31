@@ -61,7 +61,7 @@ def ComputePrecisionK(modelfile,testfile,K_list):
 
 if __name__ == '__main__':
     modelfile = "/home/khushboo/Desktop/miml/models/model3_reuter_90"
-    testfile = "/home/khushboo/Desktop/Reuter_dataset/reuters_sparse_testcvmerged.txt"
+    testfile = "/home/khushboo/Desktop/Reuter_dataset/reuters_sparse_test.txt"
     K_list = [1,2,3,4,5,6,7]
 
     ComputePrecisionK(modelfile,testfile,K_list)

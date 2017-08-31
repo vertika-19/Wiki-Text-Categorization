@@ -13,11 +13,11 @@ class Model3:
         self.filterSizes_paragraph = [1]    #[2,3]
         self.filterSizes_allPara=3
         self.paragraphLength=maxParagraphLength
-        self.num_filters_parargaph=40     #40
+        self.num_filters_parargaph=64     #40
 
         self.num_filters_allPara=30
         self.maxParagraph = maxParagraphs
-        self.poolLength= 3   #3
+        self.poolLength= 10   #3
         
         self.filterShapeOfAllPara =[self.filterSizes_allPara,3,1,self.num_filters_allPara]
         
@@ -27,8 +27,6 @@ class Model3:
         self.filterShapeOfAllPara =[maxParagraphs-5,5,1,self.num_filters_allPara]
         self.fullyConnectedLayerInput = self.paragraphOutputSize
         self.wordEmbedding = tf.Variable(tf.random_uniform([self.vocabularySize, self.wordEmbeddingDimension], -1.0, 1.0),name="wordEmbedding")
-        self.learning_rate = 1e-4
-
 
         self.paragraphList = []
         for i in range(self.maxParagraph):
@@ -49,7 +47,7 @@ class Model3:
             self.prediction=self.fullyConnectedLayer(self.convOutput,self.labels)
             self.cross_entropy = -tf.reduce_sum(((self.target*tf.log(self.prediction + 1e-9)) + ((1-self.target) * tf.log(1 - self.prediction + 1e-9)) )  , name='xentropy' ) 
             self.cost = tf.reduce_mean(self.cross_entropy)
-            self.optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate).minimize(self.cost)
+            self.optimizer = tf.train.AdamOptimizer(learning_rate=1e-3).minimize(self.cost)
         
     
     def getParagraphEmbedding(self,paragraphWords):
@@ -117,7 +115,6 @@ class Model3:
         feed_dict_input[self.target]=data[0]
         for p in range(self.maxParagraph):
             feed_dict_input[self.paragraphList[p]]= data[1][p]
-            #print(data[1][p])
         _, cost = self.session.run((self.optimizer,self.cost),feed_dict=feed_dict_input)
         return cost
 
