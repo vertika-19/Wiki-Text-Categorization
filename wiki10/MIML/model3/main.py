@@ -49,7 +49,7 @@ for e in range(epoch,epochEnd):
         costepochs.append(cost/training.totalPages)
         output = output + "," + str(cost/training.totalPages) 
         print ('saving model..')
-        model.save("models/" + folder_name + "/model7_reuter_"+str(e+1))
+        model.save("models/" + folder_name + "/model3_wiki10_toplabels_"+str(e+1))
 
 
 costfile.write(output + "\n")

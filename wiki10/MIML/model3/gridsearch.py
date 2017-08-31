@@ -22,11 +22,11 @@ for pl in paragraphLength:
 					for bs in batchSize:
 						for lrate in learningRate:
 							for pool in poolLength:
-								folder = "M7_" + str(pl) + "_" + str(mp) + "_" +  fs + "_" + str(nf) + "_" +  str(wd) + "_" + str(bs) + "_" + str(maxepochs) + "_" + str(lrate) + "_" + str(pool)
+								folder = "M3_" + str(pl) + "_" + str(mp) + "_" +  fs + "_" + str(nf) + "_" +  str(wd) + "_" + str(bs) + "_" + str(maxepochs) + "_" + str(lrate) + "_" + str(pool)
 								os.system("mkdir models\\" + folder)
 								print("LOG: Iteration for params: [ paragraphLength=" + str(pl) + " maxParagraphs=" + str(mp) + " filterSizes=" + str(fs) +"  num_filters=" + str(nf)  +" wordEmbeddingDimension=" + str(wd) + " batchSize=" + str(bs) + " maxepochs=" + str(maxepochs) + "  foldername=" + folder + " learning rate=" + str(lrate) + " poolLength=" + str(pool) + " ]" )
 								os.system("python main.py " + str(pl) + " " + str(mp) + " " + str(fs) +"  " + str(nf)  +" " + str(wd) + " " + str(bs) + " " + str(maxepochs) + "  " + folder + " " + str(lrate) + " " + str(pool) )
 								for ep in epochs:
-									folder_fscore = "M7_" + str(pl) + "_" + str(mp) + "_" +  fs + "_" + str(nf) + "_" +  str(wd) + "_" + str(bs) + "_" + str(ep) + "_" + str(lrate) + "_" + str(pool)
+									folder_fscore = "M3_" + str(pl) + "_" + str(mp) + "_" +  fs + "_" + str(nf) + "_" +  str(wd) + "_" + str(bs) + "_" + str(ep) + "_" + str(lrate) + "_" + str(pool)
 									os.system("python Fscore_labelwise.py " + str(pl) + " " + str(mp) + " " + str(fs) +"  " + str(nf)  +" " + str(wd) + " " + str(bs) + "  " + str(ep) + "  " + folder + "  " + folder_fscore + " " + str(lrate) + " " + str(pool) )
 
