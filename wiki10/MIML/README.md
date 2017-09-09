@@ -1,4 +1,4 @@
 # Wiki 10 MIML dataset 
 
 It is prepared by taking wiki dumps <br/> <br/>
-<img width="350"  height="350" src="dataset/top50label_freq_curve.png">
+![Alt text](dataset/top50label_freq_curve.png?raw=true "Top 50 label Frequency curve - wiki10 MIML dataset")
