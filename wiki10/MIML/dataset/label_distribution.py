@@ -1,8 +1,12 @@
 import numpy as np 
 
-filename = "preprocessed_data/split/wiki10_miml.txt"
+#cannot directly generate stats file for complete wiki10_miml.txt has it has same pages with diff no of labels
+#instead generating for train and test spearately and then combining them in to wiki10_stats.csv
+
+filename = "preprocessed_data/split/wiki10_miml_test.txt"
+#filename = "preprocessed_data/split/wiki10_miml.txt"
 inpFile = open(filename,'r')
-outputfilename = "wikilabel_stats.csv"
+outputfilename = "wikilabel_stats_test.csv"
 outputfile = open(outputfilename,'w')
 
 totalPages = int(inpFile.readline())
@@ -12,14 +16,15 @@ totalPages = int(inpFile.readline())
 labeldict = np.zeros(30938)
 for count in range(totalPages):
 	docid = int(inpFile.readline())
-	print(str(docid))
+	# print(str(docid))
 	labels = inpFile.readline().rstrip("\n")
 	for i in range(int(labels)):		#just pass 
 		x = inpFile.readline().rstrip("\n")
 		labeldict[int(x)] += 1
 	noofpara = inpFile.readline().rstrip("\n")
+	print(noofpara)
 	for i in range(int(noofpara) ):
-		line = inpFile.readline().rstrip("\n").split("\t")
+		line = inpFile.readline().rstrip("\n").split(" ")
 		
 for i in range(len(labeldict)):
 	outputfile.write( str(i) + "," + str(labeldict[i]) + "\n" )

@@ -14,3 +14,7 @@ test
 6616-479 = 6137
 
 13285 + 6137 = 19422
+
+
+There are some pages that are present twice may be becuase that is present in both test and train 
+And some of these also have diff no of labels too- So same page in test has suppose 29 labels then in train it has 28 labels
