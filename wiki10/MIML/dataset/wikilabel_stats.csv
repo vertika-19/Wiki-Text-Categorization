@@ -1,5 +1,5 @@
 WIKI10_MIML after preprocessing,,,
-No of documents in which a particular label is present,,,
+No of documents in which a particular label is present,,
 index,freq_count_for_label_in_test,freq_count_for_label_in_train,total_freq_count_for_label
 30134,4978,10724,15702
 30071,2584,5585,8169
