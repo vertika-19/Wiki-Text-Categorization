@@ -1,5 +1,5 @@
 from DataParser import DataParser as DataParser
-from model7 import Model7 as Model
+from OneVsAll import OneVsAll as Model
 from sklearn.metrics import f1_score
 from sklearn.metrics import confusion_matrix
 import numpy as np
@@ -22,21 +22,13 @@ def thresholdTuning(tr,pr):
 
  
 def ComputeFscore(modelfile,testfile,outputfile):
-    maxParagraphLength = int(sys.argv[1])
-    maxParagraphs = int(sys.argv[2] )
-    filterSizes = [int(i) for i in sys.argv[3].split("-")]
-    num_filters = int(sys.argv[4])
-    wordEmbeddingDimension = int(sys.argv[5])
-    # batchSize= int(sys.argv[6])
-    # epochs= int(sys.argv[7])
-    # folder_name = sys.argv[8]
-
     labels = 8
     vocabularySize = 244
+    regLambda = float(sys.argv[1])
 
-    model = Model(maxParagraphs,maxParagraphLength,labels,vocabularySize,filterSizes,num_filters,wordEmbeddingDimension)
+    model = Model(labels,vocabularySize,regLambda)
 
-    testing = DataParser(maxParagraphs,maxParagraphLength,labels,vocabularySize)
+    testing = DataParser(labels,vocabularySize)
     testing.getDataFromfile(testfile)
 
     model.load(modelfile)
@@ -84,20 +76,20 @@ def ComputeFscore(modelfile,testfile,outputfile):
         thresLab[la]=bestThre
     
     f=open(outputfile,"a")
-    output = sys.argv[9]
+    output = sys.argv[5]
     
     sum_fscore = 0.0
     for i in range(labels):
         sum_fscore = sum_fscore + fScr[i]
         output = output + " , " + str(fScr[i])
     output += " , " + str(sum_fscore / float(labels - 1))
-    print("Fscore at " + sys.argv[7] + " epochs: " + str(sum_fscore / float(labels - 1)) )
+    print("Fscore at " + sys.argv[3] + " epochs: " + str(sum_fscore / float(labels - 1)) )
     f.write(output + "\n")
     f.close()
 
 
 if __name__ == '__main__':
     testfile = "../../dataset/reuters_sparse_testcvmerged.txt"
-    modelfile = "models/" + sys.argv[8] + "/model7_reuter_" + sys.argv[7]
+    modelfile = "models/" + sys.argv[4] + "/model8_reuter_" + sys.argv[3]
     outputfile = "results/fscorelabelwise.txt"
     ComputeFscore(modelfile,testfile,outputfile)
