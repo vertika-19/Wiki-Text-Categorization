@@ -35,7 +35,7 @@ class OneVsAll:
             self.optimizer = tf.train.GradientDescentOptimizer(1e-4).minimize(self.cost)
     
     def linearClassifier(self):
-        return ( tf.matmul(self.document, self.allWeights) + self.bias + self.reglambda * tf.nn.l2_loss(self.allWeights) )
+        return tf.sigmoid( tf.matmul(self.document, self.allWeights) + self.bias + self.reglambda * tf.nn.l2_loss(self.allWeights) )
     
     def train(self,data):
         feed_dict_input={}

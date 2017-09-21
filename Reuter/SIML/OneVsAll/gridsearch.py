@@ -1,13 +1,14 @@
 import os
 
-regLambda = [80,100,150]
-batchSize = [1,64,80,100,120]
+regLambda = [5,10,80,100,150]
+batchSize = [64,80,100,120,1]
 maxepochs = 400
 epochs = [100,200,300,400]
 
-os.system("rm -f results/costfile.txt" )
-os.system("rm -f results/fscorelabelwise.txt")
+os.system("rm -rf results")
 os.system("rm -rf models")
+os.system("mkdir models")
+os.system("mkdir results")
 
 for reg in regLambda:
 	for bs in batchSize:
