@@ -165,7 +165,7 @@ if firstPage == 1:
 
 #vectorizer = CountVectorizer(stop_words =  stopwords_filtered, max_features = 100000, ngram_range = (1,3))
 print "Training TF-IDF vector..."
-vectorizer = sklearn.feature_extraction.text.TfidfVectorizer(stop_words =  stopwords_filtered, max_features = NONE,tokenizer=LemmaTokenizer())
+vectorizer = sklearn.feature_extraction.text.TfidfVectorizer(stop_words =  stopwords_filtered, max_features = 101938,tokenizer=LemmaTokenizer())
 X = vectorizer.fit_transform(corpus)
 print "Training TF-IDF vector completed..."
 
