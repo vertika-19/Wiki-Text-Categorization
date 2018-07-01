@@ -1,0 +1,973 @@
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_16_50_100_300_0.001_2_0.8 learning rate=0.001 poolLength=2 keep_prob=0.8 ]
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_16_50_100_300_0.001_2_0.8 learning rate=0.001 poolLength=2 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.74463836350233
+saving model..
+Epoch: 200
+111.76912337379419
+saving model..
+Epoch: 300
+105.82010458764319
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507305415241
+Prec@5 = 0.375199608929
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507631307371
+Prec@5 = 0.381033078051
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_16_50_100_300_0.001_2_0.5 learning rate=0.001 poolLength=2 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.74229127218517
+saving model..
+Epoch: 200
+113.0556759852617
+saving model..
+Epoch: 300
+108.94513030989759
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507196784531
+Prec@5 = 0.373374613003
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.511596328282
+Prec@5 = 0.38321655532
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_16_50_100_300_0.001_5_0.8 learning rate=0.001 poolLength=5 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.7305091917133
+saving model..
+Epoch: 200
+112.52453535084125
+saving model..
+Epoch: 300
+107.898887915442
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.508011514855
+Prec@5 = 0.372331758188
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.50806583021
+Prec@5 = 0.374352289392
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_16_50_100_300_0.001_5_0.5 learning rate=0.001 poolLength=5 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.7278134332137
+saving model..
+Epoch: 200
+114.35127337302877
+saving model..
+Epoch: 300
+111.2617512432055
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507359730596
+Prec@5 = 0.37334202379
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.511216120797
+Prec@5 = 0.376470588235
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_64_50_100_300_0.001_2_0.8 learning rate=0.001 poolLength=2 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.76546680261559
+saving model..
+Epoch: 200
+109.65287968549815
+saving model..
+Epoch: 300
+102.77143237851148
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.509260768019
+Prec@5 = 0.379533974255
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.516213133453
+Prec@5 = 0.393058497637
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_64_50_100_300_0.001_2_0.5 learning rate=0.001 poolLength=2 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.76411235480725
+saving model..
+Epoch: 200
+111.20835721565538
+saving model..
+Epoch: 300
+104.98115353602617
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.508934875889
+Prec@5 = 0.376177285319
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.51947205475
+Prec@5 = 0.396056705231
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_64_50_100_300_0.001_5_0.8 learning rate=0.001 poolLength=5 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.75884083819665
+saving model..
+Epoch: 200
+110.49395891328001
+saving model..
+Epoch: 300
+103.48157557971116
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506979523111
+Prec@5 = 0.376535766661
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.517788278746
+Prec@5 = 0.393808049536
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=10 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_10_2-3-4_64_50_100_300_0.001_5_0.5 learning rate=0.001 poolLength=5 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.75718265435414
+saving model..
+Epoch: 200
+112.32494633285289
+saving model..
+Epoch: 300
+106.59347533489714
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507414045951
+Prec@5 = 0.375655857911
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.512356743251
+Prec@5 = 0.388072348053
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=20 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_20_2-3-4_16_50_100_300_0.001_2_0.8 learning rate=0.001 poolLength=2 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.76559121884185
+saving model..
+Epoch: 200
+110.78922592279231
+saving model..
+Epoch: 300
+104.60699236118961
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.508880560534
+Prec@5 = 0.377089783282
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.512248112541
+Prec@5 = 0.387453153006
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=20 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_20_2-3-4_16_50_100_300_0.001_2_0.5 learning rate=0.001 poolLength=2 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.76255050982317
+saving model..
+Epoch: 200
+112.65242110075646
+saving model..
+Epoch: 300
+107.59901949268502
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507414045951
+Prec@5 = 0.373179077725
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.509260768019
+Prec@5 = 0.386671011895
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=20 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_20_2-3-4_16_50_100_300_0.001_5_0.8 learning rate=0.001 poolLength=5 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.74867421833785
+saving model..
+Epoch: 200
+111.67240674045237
+saving model..
+Epoch: 300
+105.99247184314709
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.50784856879
+Prec@5 = 0.373276845364
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.509260768019
+Prec@5 = 0.383281733746
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=20 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_20_2-3-4_16_50_100_300_0.001_5_0.5 learning rate=0.001 poolLength=5 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.7452669579942
+saving model..
+Epoch: 200
+113.6899858222172
+saving model..
+Epoch: 300
+110.00206094503636
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507251099886
+Prec@5 = 0.373276845364
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.510455705828
+Prec@5 = 0.379566563467
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=20 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_20_2-3-4_64_50_100_300_0.001_2_0.8 learning rate=0.001 poolLength=2 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.77629498855414
+saving model..
+Epoch: 200
+117.57850152375839
+saving model..
+Epoch: 300
+117.57683708414585
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=20 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_20_2-3-4_64_50_100_300_0.001_2_0.5 learning rate=0.001 poolLength=2 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.77492239901274
+saving model..
+Epoch: 200
+117.57895797417854
+saving model..
+Epoch: 300
+117.57860180007206
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=20 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_20_2-3-4_64_50_100_300_0.001_5_0.8 learning rate=0.001 poolLength=5 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.77458193792863
+saving model..
+Epoch: 200
+110.57881427546113
+saving model..
+Epoch: 300
+103.13707886156172
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.5079571995
+Prec@5 = 0.376470588235
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.513388734995
+Prec@5 = 0.394557601434
+LOG: Iteration for params: [ paragraphLength=50 maxParagraphs=20 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_50_20_2-3-4_64_50_100_300_0.001_5_0.5 learning rate=0.001 poolLength=5 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.77273854649465
+saving model..
+Epoch: 200
+112.16941508403045
+saving model..
+Epoch: 300
+105.66098425636116
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506979523111
+Prec@5 = 0.37399380805
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.514529357449
+Prec@5 = 0.393547335832
+LOG: Iteration for params: [ paragraphLength=15 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_15_10_2-3-4_16_50_100_300_0.001_2_0.8 learning rate=0.001 poolLength=2 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.7402290759948
+saving model..
+Epoch: 200
+111.63089606325128
+saving model..
+Epoch: 300
+105.63604765307059
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507359730596
+Prec@5 = 0.373896040411
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.508934875889
+Prec@5 = 0.377220140134
+LOG: Iteration for params: [ paragraphLength=15 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_15_10_2-3-4_16_50_100_300_0.001_2_0.5 learning rate=0.001 poolLength=2 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.73833909747343
+saving model..
+Epoch: 200
+113.4801070192978
+saving model..
+Epoch: 300
+109.33921747382291
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.37125631416
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.511867905057
+Prec@5 = 0.377350496985
+LOG: Iteration for params: [ paragraphLength=15 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_15_10_2-3-4_16_50_100_300_0.001_5_0.8 learning rate=0.001 poolLength=5 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.72501128982496
+saving model..
+Epoch: 200
+112.32906660378514
+saving model..
+Epoch: 300
+107.6075471007965
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507251099886
+Prec@5 = 0.373244256151
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.508934875889
+Prec@5 = 0.375297376568
+LOG: Iteration for params: [ paragraphLength=15 maxParagraphs=10 filterSizes=2-3-4  num_filters=16 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_15_10_2-3-4_16_50_100_300_0.001_5_0.5 learning rate=0.001 poolLength=5 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.72213393000132
+saving model..
+Epoch: 200
+114.43524185101317
+saving model..
+Epoch: 300
+111.02834294366804
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.370995600456
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.50871761447
+Prec@5 = 0.375492911846
+LOG: Iteration for params: [ paragraphLength=15 maxParagraphs=10 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_15_10_2-3-4_64_50_100_300_0.001_2_0.8 learning rate=0.001 poolLength=2 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.76453134420454
+saving model..
+Epoch: 200
+109.41562773045962
+saving model..
+Epoch: 300
+102.58760628185291
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.508934875889
+Prec@5 = 0.37728531856
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.511161805442
+Prec@5 = 0.38507414046
+LOG: Iteration for params: [ paragraphLength=15 maxParagraphs=10 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_15_10_2-3-4_64_50_100_300_0.001_2_0.5 learning rate=0.001 poolLength=2 keep_prob=0.5 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[2, 3, 4]
+Epoch: 100
+119.76349354875556
+saving model..
+Epoch: 200
+111.79268164695436
+saving model..
+Epoch: 300
+105.43344221317074
+saving model..
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.506707946336
+Prec@5 = 0.369692031937
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.507902884145
+Prec@5 = 0.373048720873
+LOG: Calculating precision
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+loading done
+no of test examples: 6137
+Computing Prec@k
+Prec@1 = 0.811145510836
+Prec@3 = 0.51420346532
+Prec@5 = 0.390255825322
+LOG: Iteration for params: [ paragraphLength=15 maxParagraphs=10 filterSizes=2-3-4  num_filters=64 wordEmbeddingDimension=50 batchSize=100 maxepochs=300  foldername=M7_15_10_2-3-4_64_50_100_300_0.001_5_0.8 learning rate=0.001 poolLength=5 keep_prob=0.8 ]
+WARNING:tensorflow:From /home/khushboo/wiki10/MIML/deep_learning_with_clustering/clustering_DL.py:68: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
